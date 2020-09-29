@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+  padding: 20px;
+  transition: background-color 0.25s ease-in;
+
+}
+
+/* .app__dropdown {
+  background-color: white;
+
+} */
+
+.nightmode {
+  background-color: #162447;
+  color: rgb(238, 229, 229);
+  transition: background-color 0.25s ease-in;
+}
+
+.nightmode__h1 {
+  color: rgb(238, 229, 229);
+}
+
+.toggle {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+input[type="checkbox"].checkbox {
+  width: 70px;
+  height: 10px;
+  background: rgb(196, 169, 169);
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+}
+
+input[type="checkbox"].checkbox:checked + label {
+  left: 55px;
+}
+
+input[type="checkbox"].checkbox:focus-visible {
+  outline: solid 2px white;
+}
+
+.symbol__moon {
+  font-size: 30px;
+}
+
+.symbol__sun {
+  font-size: 35px;
+}
+
+input[type="checkbox"].checkbox + label {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  left: 2px;
+  background-color: rgb(84, 147, 230);
+}
+
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: black;
+  font-size: 2rem;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+.app__right {
+  display: flex;
+  flex: 0.4;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.app__right .MuiCardContent-root{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph{
+  flex-grow: 1;
+}
+
+.header__graph{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
